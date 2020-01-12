@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nido-nutriapp';
+  title = 'Nido Nutriapp';
+  description = 'Prueba de contenido de angular';
 }
