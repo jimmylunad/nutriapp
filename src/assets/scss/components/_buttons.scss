@@ -42,3 +42,13 @@
     width: auto;
   }
 }
+
+.btn-block {
+  height: 30px;
+  border: 1px solid $orange;
+  border-radius: 30px;
+  background-color: transparent;
+  color: $orange;
+  font-size: .7em;
+  padding: 10px;
+}

@@ -11,8 +11,8 @@ export class ComidasComponent implements OnInit {
 
   title: string;
   config: IHeader;
-  tabs: any[];
-  tab_selected: number;
+  categoryList: any;
+  productblockList: any;
 
   constructor() {
     this.title = 'Comidas'
@@ -26,11 +26,35 @@ export class ComidasComponent implements OnInit {
       },
       back: false
     }
-    this.tabs = [
-      { id: 1, name:'Tab1', type:'tab1' },
-      { id: 2, name:'Tab2', type:'tab2' }
+    this.categoryList = [
+      { name: 'Subs & Salads', image: 'assets/images/food/mostaccioli.jpg' },
+      { name: 'Pasta & Pizza', image: 'assets/images/food/salsa_panna.jpg' },
+      { name: 'Favourites', image: 'assets/images/food/pesto.jpg' },
+      { name: 'Simply > to go', image: 'assets/images/food/spaghetti.jpg' },
+      { name: 'Food truck 1', image: 'assets/images/food/ravioli.jpg' },
     ]
-    this.tab_selected = 1;
+    this.productblockList = [
+      {
+        name: 'Mostaccioli',
+        img: 'assets/images/food/mostaccioli.jpg'
+      },
+      {
+        name: 'Salsa panna & prosciutto',
+        img: 'assets/images/food/salsa_panna.jpg'
+      },
+      {
+        name: 'Pesto',
+        img: 'assets/images/food/pesto.jpg'
+      },
+      {
+        name: 'Spaghetti',
+        img: 'assets/images/food/spaghetti.jpg'
+      },
+      {
+        name: 'Ravioli',
+        img: 'assets/images/food/ravioli.jpg'
+      },
+    ];
   }
 
   ngOnInit() {

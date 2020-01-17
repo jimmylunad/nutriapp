@@ -1,12 +1,46 @@
 <headerMain [config]='config'></headerMain>
 <section class="section foods">
   <div class="container">
-    <app-tabs>
+    <app-tabs class="full">
       <app-tab [tabTitle]="'Comidas'">
-        Tab 1 content
+        <div class="foods-category">
+          <ul>
+            <li class="category" *ngFor="let category of categoryList">
+              <div class="category-item category-item--image">
+                <figure>
+                  <img [src]="category.image" [alt]="category.name">
+                </figure>
+                <span>{{ category.name }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </app-tab>
       <app-tab tabTitle="Productos bloqueados">
-        Tab 2 content
+        <div class="productblock">
+          <div class="productblock-title">
+            <h5>Subs & Salads</h5>
+          </div>
+          <ul class="productblock-list">
+            <li *ngFor="let product of productblockList">
+              <div class="product">
+                <div class="product-box">
+                  <div class="product-item product-item--image">
+                    <figure>
+                      <img [src]="product.img" [alt]="product.name">
+                    </figure>
+                  </div>
+                  <div class="product-item product-item--title">
+                    <h5>{{ product.name }}</h5>
+                  </div>
+                </div>
+                <div class="product-box">
+                  <button class="btn btn-block">Desbloquear</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </app-tab>
     </app-tabs>
   </div>
