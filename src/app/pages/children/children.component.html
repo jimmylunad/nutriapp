@@ -1,7 +1,7 @@
 <headerMain [config]='config' (messageEvent)="goAction($event)"></headerMain>
 <section class="section children">
   <div class="container">
-    <form [formGroup]='form' #loginForm="ngForm" (ngSubmit)="onSubmit(form.value)" class="form">
+    <form [formGroup]='form' #loginForm="ngForm" (ngSubmit)="onSubmit()" class="form">
       <div class="card-header">
         <app-filepreview></app-filepreview>
       </div>

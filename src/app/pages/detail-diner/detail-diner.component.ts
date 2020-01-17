@@ -29,4 +29,8 @@ export class DetailDinerComponent implements OnInit {
   ngOnInit() {
   }
 
+  goAction() {
+    console.log('ingreso')
+  }
+
 }

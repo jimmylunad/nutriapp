@@ -61,4 +61,8 @@ export class ChildrenComponent implements OnInit {
     }
   }
 
+  onSubmit() {
+    console.log('hola')
+  }
+
 }
