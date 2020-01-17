@@ -1,0 +1,49 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import './config/colors';
+@import './config/fonts';
+
+@import './components/card';
+@import './components/buttons';
+@import './components/navbar';
+
+body,
+html {
+  margin: 0;
+  font-family: 'Avenir-Roman';
+  height: 100%;
+  background-color: $gray_background;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  &:focus {
+    outline: none;
+  }
+}
+
+main {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+.container {
+  padding: 0 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+}
+
+section {
+  padding-bottom: 100px;
+}

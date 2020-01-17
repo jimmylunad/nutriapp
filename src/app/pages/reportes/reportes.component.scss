@@ -1,0 +1,60 @@
+@import 'src/assets/scss/config/colors';
+.container {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.reports {
+  &-products {
+    margin-top: 30px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &-title {
+      margin-bottom: 15px;
+      h5 {
+        margin: 0;
+        color: $orange;
+      }
+    }
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin-top: 15px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  &-item {
+    &--image {
+      margin-right: 15px;
+      figure {
+        margin: 0;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &--title {
+      h5 {
+        margin: 0;
+        color: $gray;
+      }
+    }
+  }
+}

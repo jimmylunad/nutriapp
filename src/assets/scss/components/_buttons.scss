@@ -1,0 +1,44 @@
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1em;
+  color: $white;
+  font-family: 'Avenir-Roman';
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+  -webkit-tap-highlight-color: transparent;
+  &--orange {
+    background-color: $orange;
+  }
+}
+
+.btn-circule {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: -1px 2px 12px rgba($black, 0.4);
+  text-decoration: none;
+  &-float {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+  }
+  &--orange {
+    background-color: $orange;
+    color: $white;
+  }
+  .mat-icon {
+    font-size: 2.5em;
+    height: auto;
+    width: auto;
+  }
+}

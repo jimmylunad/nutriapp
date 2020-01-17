@@ -1,3 +1,32 @@
-<p>
-  mishijos works!
-</p>
+<headerMain [config]='config' (messageEvent)="goAction($event)"></headerMain>
+<section class="section childrens">
+  <div class="container">
+    <div class="card">
+      <div class="childrens-card">
+        <div class="childrens-card-box childrens-card-box--user">
+          <figure class="childrens-user-figure">
+            <img src="assets/images/perfil.jpg" alt="">
+            <figcaption>Juan Carlos</figcaption>
+          </figure>
+        </div>
+        <div class="childrens-card-box childrens-card-box--consumer">
+          <div class="childrens-consumer">
+            <div class="consumer">
+              <span class="consumer-label">Consumo</span>
+              <span class="consumer-amount">$786.617</span>
+            </div>
+          </div>
+          <div class="childrens-consumer">
+            <div class="consumer">
+              <span class="consumer-label">Por consumir</span>
+              <span class="consumer-amount">$100.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a [routerLink]="['/nuevo-hijo']" class="card-new">
+      <span>Agregar hijo</span>
+    </a>
+  </div>
+</section>

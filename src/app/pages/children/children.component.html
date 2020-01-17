@@ -1,0 +1,15 @@
+<headerMain [config]='config' (messageEvent)="goAction($event)"></headerMain>
+<section class="section children">
+  <div class="container">
+    <form [formGroup]='form' #loginForm="ngForm" (ngSubmit)="onSubmit(form.value)" class="form">
+      <div class="card-header">
+        <app-filepreview></app-filepreview>
+      </div>
+      <div class="card-body">
+        <div>
+          <app-input *ngFor="let input of inputs" [config]='input' [parentGroup]="form"></app-input>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

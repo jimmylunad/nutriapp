@@ -1,0 +1,54 @@
+@import 'src/assets/scss/config/colors';
+
+.header {
+  margin-bottom: 10px;
+  &-container {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-item {
+    &--title {
+      color: $gray;
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 1.1em;
+        margin: 0;
+      }
+      .back-view {
+        color: $gray;
+        display: flex;
+        text-decoration: none;
+        margin-right: 15px;
+        .mat-icon {
+          width: auto;
+          height: auto;
+          font-size: 1.1em;
+        }
+      }
+    }
+    &--icon {
+      a {
+        color: $gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &.--orange {
+          color: $orange;
+          .mat-icon {
+            font-size: 1.6em;
+          }
+        }
+        .mat-icon {
+          font-size: 1.1em;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}

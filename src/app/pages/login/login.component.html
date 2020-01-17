@@ -1,3 +1,32 @@
-<p>
-  login works!
-</p>
+<main class="main">
+  <div class="container">
+    <section class="login">
+      <div class="login-header">
+        <h1>
+          <span>Nido</span>
+          <span>Nutri app</span>
+        </h1>
+        <div class="login-header-powerby">
+          <span>power by</span>
+          <img src="assets/images/logo_wigo.png" alt="wibo">
+        </div>
+      </div>
+      <div class="card card-login">
+        <form [formGroup]='form' #loginForm="ngForm" (ngSubmit)="onSubmit(form.value)" class="form">
+          <div class="card-header">
+            <h1>Iniciar sesión</h1>
+          </div>
+          <div class="card-body">
+            <div>
+              <app-input *ngFor="let input of inputs" [config]='input' [parentGroup]="form"></app-input>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type='submit' class="btn btn--orange" [disabled]="!form.valid">Iniciar sesión</button>
+            <p *ngIf="error" class="form-error">{{ error }}</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</main>

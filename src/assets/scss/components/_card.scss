@@ -1,0 +1,30 @@
+.card {
+  background-color: $white;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  box-shadow: 0 6px 12px rgba($black, .1);
+  &-login {
+    padding: 25px 25px;
+    justify-content: center;
+  }
+  &-header {
+    text-align: center;
+    h1 {
+      color: $orange;
+      font-family: 'Avenir-Book';
+      margin: .3em 0 1.6em;
+    }
+  }
+  &-body {
+    width: 100%;
+  }
+  &-footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
